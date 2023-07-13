@@ -56,11 +56,6 @@ const body = document.body;
 
 darkModeButton.addEventListener('click', toggleDarkMode);
 
-function toggleDarkMode() {
-  body.classList.toggle('dark-mode');
-  darkModeButton.textContent = body.classList.contains('dark-mode') ? 'Switch to Light Mode' : 'Switch to Dark Mode';
-}
-
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 

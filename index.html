@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
+
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Piyush Barhanpurkar</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="assets/img/resume.pdf" download class="nav__link" >Resume</a></li>
+                    </ul>
+                </div>
+               
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+        <body>
+            
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Piyush</span><br> Software Developer</h1>
+                    
+                   <!--====== Contact Me button ====-->
+                   <button  class="button" onclick="redirectToLinkedIn()">Contact Me</button>
+
+                   <script>
+                     function redirectToLinkedIn() {
+                       window.location.href = 'https://www.linkedin.com';
+                     }
+                   </script>
+                   
+                
+                <div class="home__social" id="icon">
+                    <a href="https://www.linkedin.com/in/piyush-barhanpurkar-983674200/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="https://github.com/Sargentsteak" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <button id="darkModeButton">Switch to Dark Mode</button>
+
+                <!-- <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 479" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.jpg"/>
+                        </g>
+                    </svg>
+                </div> -->
+               <div>
+                <img src="assets/img/perfil.jpg" alt="Image" class="image">
+                </div>
+
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle"></h2>
+                        <p class="about__text">Hey everyone! I'm Piyush Barhanpurkar, a passionate individual who recently completed my Bachelors in Information Technology from SPPU. I have a deep fascination for understanding how things function and enjoy breaking them down to their core components. Alongside my technical background, I possess a keen interest in exploring the realms of <b>Generative AI</b>, crafting clean and intuitive <b>UI/UX</b>experiences, and delving into the world of <b>Data Analytics</b>.</p>
+
+                         <p class="about__text">I'm constantly seeking opportunities to expand my knowledge and skills in these areas while collaborating with like-minded individuals. If you're interested in discussing any of these topics or simply getting to know each other better, I'm always open to engaging conversations. Let's connect and embark on a journey of growth and learning together!</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <!-- <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div> -->
+                <!-- </div>
+            </section> -->
+
+
+          <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>            
+  <div class="card-row">
+    <div class="card">
+      <img src="assets/img/html.jpg" alt="HTML Icon">
+      <h3>HTML</h3>
+    </div>
+     
+    <div class="card">
+      <img src="assets/img/javascript.png" alt="JavaScript Icon">
+      <h3>JavaScript</h3>
+    </div>
+    
+    <div class="card">
+      <img src="assets/img/react.png" alt="React Icon">
+      <h3>React</h3>
+    </div>
+    
+    <div class="card">
+      <img src="assets/img/python.jpg" alt="Python Icon">
+      <h3>Python</h3>
+    </div>
+    
+    <div class="card">
+      <img src="assets/img/c++.png" alt="C++ Icon">
+      <h3>C++</h3>
+    </div>
+  </div>
+  
+  <div class="card-row">
+    <div class="card">
+      <img src="assets/img/postman.png" alt="Postman Icon">
+      <h3>Postman</h3>
+    </div>
+    
+    <div class="card">
+      <img src="assets/img/nodejs.png" alt="Node.js Icon">
+      <h3>Node.js</h3>
+    </div>
+    
+    <div class="card">
+      <img src="assets/img/mongodb.png" alt="MongoDB Icon">
+      <h3>MongoDB</h3>
+    </div>
+    
+    <div class="card">
+      <img src="assets/img/express.png" alt="Express Icon">
+      <h3>Express</h3>
+    </div>
+    
+    <div class="card">
+      <img src="assets/img/R.jpg" alt="R Icon">
+      <h3>R</h3>
+    </div>
+    
+    <div class="card">
+      <!-- Placeholder for empty card -->
+    </div>
+  </div>
+  
+  
+  
+
+            <!--===== WORK =====-->
+
+            <h2 class="section-title">Work Experience</h2> 
+            <div class="card-container">
+                <div class="work-experience-card">
+                  <h3>Ideoholics</h3>
+                  <p>Position: Quality Assurance and Project Coordination</p>
+                  <p>Date: September 2021 - November 2021</p>
+                  <p>1. Collaborated with the team's product manager and tech lead to create and implemented a quality 
+                    assurance process to test new features.</p>
+                   <p>2. Performed thorough black-box testing of web and mobile-web applications.</p>
+                   <p>3. Created and maintained detailed, comprehensive, and well-structured test cases and test plans.</p>
+                  <p> 4. Prepared and documented release notes.</p>
+                </div>
+            
+                <div class="work-experience-card">
+                  <h3>Exposys Datalabs</h3>
+                  <p>Position: Data Science Intern </p>
+                  <p>Date:August 2021 - September 2021</p>
+                  <p>1. Collaborated on analysis of customers in the market. </p>
+                    <p>2. Computed the Customer Segmentation using K-Means</p>
+                </div>
+            
+                <div class="work-experience-card">
+                  <h3>Edify Accelerators</h3>
+                  <p>Position: Full Stack Developer</p>
+                  <p>Date: August 2020 - April 2021</p>
+                  <p>1. Wrote testable , efficient snippets of code by using best software development practices.</p>
+                    <p>2. Integrated data from various backend services and databases</p>
+                </div>
+              </div>
+              
+
+
+
+            <!--===============Projects=====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <!-- <section class="contact section" id="contact">
+                <h2 class="section-title">Resume</h2>
+
+
+                <h2>Download Resume</h2>
+                <p>To download my resume, click the link below:</p>
+                <a href="assets/img/resume.pdf" download>Download Resume</a> -->
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Piyush Barhanpurkar</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-spotify' ></i></a>
+
+
+            </div>
+            <p class="footer__copy">&#169;All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

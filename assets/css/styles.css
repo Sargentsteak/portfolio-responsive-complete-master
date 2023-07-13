@@ -212,13 +212,6 @@ img {
   flex-direction: column;
 }
 
-.dark-mode #icon{
-  color:whites;
-}
-.dark-mode .dark-icon{
-  color: #fff;
-}
-
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
@@ -240,7 +233,8 @@ img {
 
 .image{
 
-  position: fixed;
+  align-self: flex-start;
+  margin-left: auto;
   top: 0;
   right: 0;
   width: 300px; /* Adjust width as needed */
@@ -548,15 +542,4 @@ img {
   .home__img {
     width: 450px;
   }
-}
-
-body {
-  background-color: white;
-  color: black;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.dark-mode {
-  background-color: black;
-  color: white;
 }

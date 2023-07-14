@@ -245,8 +245,9 @@ img {
 
 .home__img {
   position: absolute;
+  top: 50%;
   right: 0;
-  bottom: 0;
+  transform: translateY(-50%);
   width: 260px;
 }
 
@@ -263,9 +264,12 @@ img {
     margin-top: 2rem;
     width: 100%;
     max-width: 300px;
-    align-self: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(0);
   }
 }
+
 
   
 

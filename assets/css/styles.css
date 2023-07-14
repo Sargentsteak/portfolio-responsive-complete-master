@@ -209,12 +209,14 @@ img {
 
 .home__social {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+  justify-content: center;
+  align-items: center;
 }
 
 .home__social-icon {
   width: max-content;
-  margin-bottom: var(--mb-2);
+  margin: 0.5rem; /* Add margin for spacing between icons */
   font-size: 1.5rem;
   color: var(--second-color);
 }
@@ -222,6 +224,13 @@ img {
 .home__social-icon:hover {
   color: var(--first-color);
 }
+
+@media screen and (max-width: 768px) {
+  .home__social {
+    justify-content: center; /* Center the icons on smaller screens */
+  }
+}
+
 
 .home__img {
   position: absolute;

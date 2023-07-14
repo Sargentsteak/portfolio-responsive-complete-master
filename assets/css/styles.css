@@ -258,14 +258,14 @@ img {
   border-radius: 20%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 765px) {
   .home__img {
     position: static;
     margin-top: 2rem;
     width: 100%;
     max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 12%;
+    margin-right: 10%;
     transform: translateY(0);
   }
 }

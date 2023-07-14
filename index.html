@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
 
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Piyush Barhanpurkar</a>
-                </div>
+    <title>Portfolio website complete</title>
+</head>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="assets/img/resume.pdf" download class="nav__link" >Resume</a></li>
-                    </ul>
-                </div>
-               
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Piyush Barhanpurkar</a>
+            </div>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Piyush</span><br> Software Developer</h1>
-                    
-                   <!--====== Contact Me button ====-->
-                   <button  class="button" onclick="redirectToLinkedIn()">Contact Me</button>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="assets/img/resume.pdf" download class="nav__link">Resume</a></li>
+                </ul>
+            </div>
 
-                   <script>
-                     function redirectToLinkedIn() {
-                       window.location.href = 'https://www.linkedin.com';
-                     }
-                   </script>
-                   
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Piyush</span><br> Software Developer
+                </h1>
+
+                <!--====== Contact Me button ====-->
+                <button class="button" onclick="redirectToLinkedIn()">Contact Me</button>
+
+                <script>
+                    function redirectToLinkedIn() {
+                        window.location.href = 'https://www.linkedin.com';
+                    }
+                </script>
+
 
                 <div class="home__social">
-                    <a href="https://www.linkedin.com/in/piyush-barhanpurkar-983674200/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="https://github.com/Sargentsteak" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/piyush-barhanpurkar-983674200/" class="home__social-icon"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance'></i></a>
+                    <a href="https://github.com/Sargentsteak" class="home__social-icon"><i
+                            class='bx bxl-github'></i></a>
                 </div>
 
                 <!-- <div class="home__img">
@@ -71,32 +76,41 @@
                         </g>
                     </svg>
                 </div> -->
-               <div class="home__img">
-                <img src="assets/img/perfil.jpg" alt="Image" class="image">
+                <div class="home__img">
+                    <img src="assets/img/perfil.jpg" alt="Image" class="image">
                 </div>
 
-            </section>
+        </section>
 
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle"></h2>
-                        <p class="about__text">Hey everyone! I'm Piyush Barhanpurkar, a passionate individual who recently completed my engineering degree in Information Technology from SPPU. I have a deep fascination for understanding how things function and enjoy breaking them down to their core components. Alongside my technical background, I possess a keen interest in exploring the realms of <b>Generative AI</b>, crafting clean and intuitive <b>UI/UX</b>experiences, and delving into the world of <b>Data Analytics</b>.</p>
-
-                         <p class="about__text">I'm constantly seeking opportunities to expand my knowledge and skills in these areas while collaborating with like-minded individuals. If you're interested in discussing any of these topics or simply getting to know each other better, I'm always open to engaging conversations. Let's connect and embark on a journey of growth and learning together!</p>           
-                    </div>                                   
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
                 </div>
-            </section>
 
-            <!--===== SKILLS =====-->
-            <!-- <section class="skills section" id="skills">
+                <div>
+                    <h2 class="about__subtitle"></h2>
+                    <p class="about__text">Hey everyone! I'm Piyush Barhanpurkar, a passionate individual who recently
+                        completed my engineering degree in Information Technology from SPPU. I have a deep fascination
+                        for understanding how things function and enjoy breaking them down to their core components.
+                        Alongside my technical background, I possess a keen interest in exploring the realms of
+                        <b>Generative AI</b>, crafting clean and intuitive <b>UI/UX</b> experiences, and delving into
+                        the world of <b>Data Analytics</b>.
+                    </p>
+
+                    <p class="about__text">I'm constantly seeking opportunities to expand my knowledge and skills in
+                        these areas while collaborating with like-minded individuals. If you're interested in discussing
+                        any of these topics or simply getting to know each other better, I'm always open to engaging
+                        conversations. Let's connect and embark on a journey of growth and learning together!</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <!-- <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
 
                 <div class="skills__container bd-grid">          
@@ -157,136 +171,166 @@
                     <div>              
                         <img src="assets/img/work3.jpg" alt="" class="skills__img">
                     </div> -->
-                <!-- </div>
+        <!-- </div>
             </section> -->
 
 
-          <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>            
-  <div class="card-row">
-    <div class="card">
-      <img src="assets/img/html.jpg" alt="HTML Icon">
-      <h3>HTML</h3>
-    </div>
-     
-    <div class="card">
-      <img src="assets/img/javascript.png" alt="JavaScript Icon">
-      <h3>JavaScript</h3>
-    </div>
-    
-    <div class="card">
-      <img src="assets/img/react.png" alt="React Icon">
-      <h3>React</h3>
-    </div>
-    
-    <div class="card">
-      <img src="assets/img/python.jpg" alt="Python Icon">
-      <h3>Python</h3>
-    </div>
-    
-    <div class="card">
-      <img src="assets/img/c++.png" alt="C++ Icon">
-      <h3>C++</h3>
-    </div>
-  </div>
-  
-  <div class="card-row">
-    <div class="card">
-      <img src="assets/img/postman.png" alt="Postman Icon">
-      <h3>Postman</h3>
-    </div>
-    
-    <div class="card">
-      <img src="assets/img/nodejs.png" alt="Node.js Icon">
-      <h3>Node.js</h3>
-    </div>
-    
-    <div class="card">
-      <img src="assets/img/mongodb.png" alt="MongoDB Icon">
-      <h3>MongoDB</h3>
-    </div>
-    
-    <div class="card">
-      <img src="assets/img/express.png" alt="Express Icon">
-      <h3>Express</h3>
-    </div>
-    
-    <div class="card">
-      <img src="assets/img/R.jpg" alt="R Icon">
-      <h3>R</h3>
-    </div>
-    
-    <div class="card">
-      <!-- Placeholder for empty card -->
-    </div>
-  </div>
-  
-  
-  
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="card-row">
+                <div class="card">
+                    <img src="assets/img/html.jpg" alt="HTML Icon">
+                    <h3>HTML</h3>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/javascript.png" alt="JavaScript Icon">
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/react.png" alt="React Icon">
+                    <h3>React</h3>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/python.jpg" alt="Python Icon">
+                    <h3>Python</h3>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/c++.png" alt="C++ Icon">
+                    <h3>C++</h3>
+                </div>
+            </div>
+
+            <div class="card-row">
+                <div class="card">
+                    <img src="assets/img/postman.png" alt="Postman Icon">
+                    <h3>Postman</h3>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/nodejs.png" alt="Node.js Icon">
+                    <h3>Node.js</h3>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/mongodb.png" alt="MongoDB Icon">
+                    <h3>MongoDB</h3>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/express.png" alt="Express Icon">
+                    <h3>Express</h3>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/R.jpg" alt="R Icon">
+                    <h3>R</h3>
+                </div>
+
+                <div class="card">
+                    <!-- Placeholder for empty card -->
+                </div>
+            </div>
+
+
+
 
             <!--===== WORK =====-->
 
-            <h2 class="section-title">Work Experience</h2> 
+            <h2 class="section-title" id="">Work Experience</h2>
             <div class="card-container">
                 <div class="work-experience-card">
-                  <h3>Ideoholics</h3>
-                  <p>Position: Quality Assurance and Project Coordination</p>
-                  <p>Date: September 2021 - November 2021</p>
-                  <p>1. Collaborated with the team's product manager and tech lead to create and implemented a quality 
-                    assurance process to test new features, performed integration testing, and documented bugs.</p>
-                   <p>2. Performed thorough black-box testing of web and mobile-web applications.</p>
-                   <p>3. Created and maintained detailed, comprehensive, and well-structured test cases and test plans.</p>
-                  <p> 4. Prepared and documented release notes.</p>
+                    <h3>Ideoholics</h3>
+                    <p>Position: Quality Assurance and Project Coordination</p>
+                    <p>Date: September 2021 - November 2021</p>
+                    <p>1. Collaborated with the team's product manager and tech lead to create and implemented a quality
+                        assurance process to test new features, performed integration testing, and documented bugs.</p>
+                    <p>2. Performed thorough black-box testing of web and mobile-web applications.</p>
+                    <p>3. Created and maintained detailed, comprehensive, and well-structured test cases and test plans.
+                    </p>
+                    <p> 4. Prepared and documented release notes.</p>
                 </div>
-            
+
                 <div class="work-experience-card">
-                  <h3>Exposys Datalabs</h3>
-                  <p>Position: Data Science Intern </p>
-                  <p>Date:August 2021 - September 2021</p>
-                  <p>1. Collaborated on analysis of customers in the market. </p>
+                    <h3>Exposys Datalabs</h3>
+                    <p>Position: Data Science Intern </p>
+                    <p>Date:August 2021 - September 2021</p>
+                    <p>1. Collaborated on analysis of customers in the market. </p>
                     <p>2. Computed the Customer Segmentation using K-Means</p>
                 </div>
-            
+
                 <div class="work-experience-card">
-                  <h3>Edify Accelerators</h3>
-                  <p>Position: Full Stack Developer</p>
-                  <p>Date: August 2020 - April 2021</p>
-                  <p>1. Wrote testable , efficient snippets of code by using best software development practices.</p>
+                    <h3>Edify Accelerators</h3>
+                    <p>Position: Full Stack Developer</p>
+                    <p>Date: August 2020 - April 2021</p>
+                    <p>1. Wrote testable , efficient snippets of code by using best software development practices.</p>
                     <p>2. Integrated data from various backend services and databases</p>
                 </div>
-              </div>
-              
+            </div>
+
 
 
 
             <!--===============Projects=====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Projects</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
+            <section class="contact section" id="projects"></section>
+            <h2 class="section-title">Projects</h2>
+            <div class="allcards">
+                <div class="cardproject">
+                    <img src="assets/img/webapp.png" alt="Image 1">
+                    <h3>MEMORIES WEB APP</h3>
+                    <p>CRUD Based application for creating memories using the MERN stack. Ive used a MongoDb cloud
+                        platform for the backend.</p>
+                    <a href="https://github.com/Sargentsteak/memories-web"><i class='bx bxl-github'></i></a>
                 </div>
-            </section>
 
-            <!--===== CONTACT =====-->
-            <!-- <section class="contact section" id="contact">
+                <div class="cardproject">
+                    <img src="assets/img/attendance.jpg" alt="Image 2">
+                    <h3>Automated Attendance </h3>
+                    <p> This system leverages the OpenCV library and the face-recognition library to detect and
+                        recognize faces in real-time. .</p>
+                    <a href="https://github.com/Sargentsteak/Automated-Attendance-system"><i
+                            class='bx bxl-github'></i></a>
+                </div>
+
+                <div class="cardproject">
+                    <img src="assets/img/financial.jpg" alt="Image 2">
+                    <h3>Financial Analysis</h3>
+                    <p>This model is designed to provide insightful answers by leveraging the power of data analysis,
+                        machine learning, and NLP.</p>
+                    <a href="https://github.com/Sargentsteak/Financial-Analysis"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+
+            <div class="allcards">
+                <div class="cardproject">
+                    <img src="assets/img/login.jpg" alt="Image 2">
+                    <h3>Login Page</h3>
+                    <p>The Login Page project aims to create alogin system using Node.js as the backend server and MySQL
+                        as the database for storing user credentials.</p>
+                    <a href="https://github.com/Sargentsteak/login_page-using-node.js-and-mysql"><i
+                            class='bx bxl-github'></i></a>
+                </div>
+
+                <div class="cardproject">
+                    <img src="assets/img/Pythoncrud.jpg" alt="Image 2">
+                    <h3>Python CRUD APIs</h3>
+                    <p>Python APIS for a social media app, integreated with postgres Includes creating a post, updating
+                        a post, deletiing a post and getting a post</p>
+                    <a href="https://github.com/Sargentsteak/CRUD"><i class='bx bxl-github'></i></a>
+                </div>
+
+            </div>
+    
+        </section>
+
+
+
+
+        <!--===== CONTACT =====-->
+        <!-- <section class="contact section" id="contact">
                 <h2 class="section-title">Resume</h2>
 
 
@@ -298,8 +342,8 @@
         <footer class="footer">
             <p class="footer__title">Piyush Barhanpurkar</p>
             <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-spotify' ></i></a>
+                <a href="https://twitter.com/Mikeoxlongrizzz" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+                <a href="https://open.spotify.com/playlist/5c7lpdj9TWc6gLb7LqfJuJ?si=Ok2bz15WTZCXkEAlBP2MZA" class="footer__icon"><i class='bx bxl-spotify'></i></a>
 
 
             </div>
@@ -312,5 +356,6 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
-    </body>
+</body>
+
 </html>

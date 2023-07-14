@@ -388,8 +388,45 @@ img {
  
 }
 
-/* ===== CONTACT =====*/
+/* ===== PROJECTS =====*/
 
+.allcards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.cardproject {
+  display: inline-block;
+  text-align: left;
+  width: 300px;
+  margin: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4%;
+  padding: 10px;
+  
+}
+
+.cardproject:hover{
+  background-color: #f0f0f0;
+}
+
+.cardproject img {
+  width: 200 px;
+  height: 200px;
+  padding-top: 2%;
+}
+
+.cardproject p {
+  margin-top: 10px;
+}
+
+.cardproject a {
+  display: block;
+  margin-top: 20px;
+}
 
 
 

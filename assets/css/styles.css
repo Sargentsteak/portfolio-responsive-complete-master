@@ -455,6 +455,11 @@ img {
   width: 100%;
 }
 
+.work-experience-card:hover{
+  transition: transform 0.4s ease;
+  transform: scale(1.05);
+}
+
 /* ===== PROJECTS =====*/
 .allcards {
   display: flex;
@@ -480,6 +485,8 @@ img {
 
 .cardproject:hover {
   background-color: #f0f0f0;
+  transition: transform 0.4s ease;
+  transform: scale(1.05);
 }
 
 .cardproject img {

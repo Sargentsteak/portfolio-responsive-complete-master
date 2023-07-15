@@ -399,6 +399,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
+
 }
 
 .card {
@@ -408,14 +409,24 @@ img {
   text-align: center;
   margin: 10px;
   flex: 0 0 200px;
+  border: 0.5px solid black;
+  border-radius: 10%;
 
+
+}
+
+.card:hover{
+  transition: transform 0.4s ease;
+  transform: scale(1.1);
 }
 
 .card img {
   width: 100px;
   height: 100px;
   object-fit: cover;
-  margin-bottom: 10px; /* Added margin to create space between image and description */
+  margin-bottom: 10px;
+  margin-top: 10%;
+   /* Added margin to create space between image and description */
 }
 
 .card h3 {
@@ -449,7 +460,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  flex-wrap: wrap;
+   /*
+   Allow cards to wrap on smaller screens */
 }
 
 .cardproject {

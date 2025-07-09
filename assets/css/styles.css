@@ -258,8 +258,7 @@ img {
   max-width: 260px;
   height: auto;
   border-radius: 20%;
-  margin-left: 10%;
-  margin-right: 10%;
+
 }
 
 @media screen and (max-width: 765px) {

@@ -268,8 +268,8 @@ img {
     margin-top: 2rem;
     width: 100%;
     max-width: 300px;
-    /* margin-left: 12%;
-    margin-right: 10%; */
+    margin-left: 10%;
+    margin-right: 10%;
     transform: translateY(0);
   }
 }
